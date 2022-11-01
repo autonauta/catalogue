@@ -1,0 +1,13 @@
+{
+  "name": "catalogo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "HIGHDATA",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "scripts": {
+    "watch:sass": "sass --watch sass:css"
+  }
+}

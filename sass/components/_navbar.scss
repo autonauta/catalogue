@@ -1,0 +1,53 @@
+nav {
+    width: 100%;
+    height: $navbar-height;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $color-white linear-gradient($color-blue, $color-blue);
+    background-repeat: no-repeat;
+    background-position: 1rem 100%;
+    background-size: calc(100vw - 2rem) 2px;
+    z-index: 100;
+}
+nav img {
+    height: 70%;
+    width: auto;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity .2s ease-in-out;
+    padding: 0 1rem;
+    
+}
+.menu li {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu li a{
+    color: $color-white;
+    height: 100%;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    transition: translate .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li a i {
+    transition: scale .1s ease;
+    color: $color-blue;
+}
+.menu li a:hover > i {
+    scale: 1.1;
+}
