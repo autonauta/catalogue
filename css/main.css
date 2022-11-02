@@ -92,7 +92,7 @@ input[type=submit] {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #F3F4F4 url("../img/house.jpg");
+  background: #F3F4F4 url("../img/house_small.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -232,25 +232,25 @@ input[type=submit] {
   filter: opacity(0.4) grayscale(1);
 }
 .grid__element__background--1 {
-  background: url("../img/house.jpg");
+  background: url("../img/house_small.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .grid__element__background--2 {
-  background: url("../img/house.jpg");
+  background: url("../img/house_small.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .grid__element__background--3 {
-  background: url("../img/house.jpg");
+  background: url("../img/house_small.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .grid__element__background--4 {
-  background: url("../img/house.jpg");
+  background: url("../img/house_small.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
