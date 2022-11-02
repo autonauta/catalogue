@@ -129,7 +129,23 @@
     &__element:hover > div:nth-child(2) h1 {
        opacity: 1;
     }
+    &__element:hover > div:nth-child(2) a {
+        opacity: 1;
+     }
     &__element i {
         font-size: 4rem;
+    }
+    &__element__button {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        translate: -50% 0;
+        padding: .8rem 1.3rem;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        color: $color-black;
+        background-color: $color-white;
+        opacity: 0;
+        transition: opacity .2s ease-in;
     }
 }
