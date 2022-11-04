@@ -192,7 +192,7 @@ input[type=submit] {
   font-weight: 800;
 }
 .section-alpha__list {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
@@ -267,9 +267,9 @@ input[type=submit] {
   bottom: 0;
   left: 10rem;
   translate: 0 12rem;
-  width: 25%;
+  width: 28%;
   height: 65%;
-  background: grey url("../../img/compressjpeg/10.jpg");
+  background: url("../img/phone_hand.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
