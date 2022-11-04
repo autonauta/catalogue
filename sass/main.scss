@@ -6,8 +6,15 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./layout/popup";
+@import "./sections/section-alpha";
+@import "./sections/section-beta";
+@import "./sections/section-gama";
+@import "./sections/section-delta";
+
 @import "./components/header";
 @import "./components/grid";
-@import "./components/menu";
 @import "./components/navbar";
 @import "./components/line-container";
+@import "./components/button-close";
+@import "./components/button";

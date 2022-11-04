@@ -8,8 +8,6 @@
       src="https://kit.fontawesome.com/d69281e6b3.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -24,7 +22,8 @@
         </div>
         <div class="line-container line-container--1"></div>
         <div class="line-container line-container--2"></div>
-        <img class="logo" src="./img/logo.png" alt="logo">
+       <!-- <img class="logo" src="./img/logo-otro.png" alt="logo">-->
+       <h1 class="name">TITULO</h1>
         <a href="https://www.highdatamx.com" class="local-logo"><img href="https://www.highdatamx.com" class="local-logo-img" src="./img/logo.png" alt="logo"></a>
       </div>
     </section>
@@ -36,10 +35,9 @@
           ></div>
           <div class="grid__element__content grid__element__content--1">
             <i class="fa-regular fa-lightbulb"></i>
-            <h1 class="grid__element__title grid__element__title--1 a">
+            <a onclick="navigateTo('iluminacion')" class="grid__element__title grid__element__title--1">
               Iluminación
-            </h1>
-            <a class="grid__element__button" href="#">DESCUBRE MÁS</a>
+            </a>
           </div>
         </div>
         <div class="grid__element grid__element--2">
@@ -48,8 +46,10 @@
           ></div>
           <div class="grid__element__content grid__element__content--2">
             <i class="fa-solid fa-shield-halved"></i>
-            <h1 class="grid__element__title">Seguridad</h1>
-            <a class="grid__element__button" href="#">DESCUBRE MÁS</a>
+            <a onclick="navigateTo('seguridad')" class="grid__element__title grid__element__title--1">
+              Seguridad
+            </a>
+            
           </div>
         </div>
         <div class="grid__element grid__element--3">
@@ -58,8 +58,10 @@
           ></div>
           <div class="grid__element__content grid__element__content--3">
             <i class="fa-regular fa-eye"></i>
-            <h1 class="grid__element__title">Vigilancia</h1>
-            <a class="grid__element__button" href="#">DESCUBRE MÁS</a>
+            <a onclick="navigateTo('vigilancia')" class="grid__element__title grid__element__title--1">
+              Vigilancia
+            </a>
+            
           </div>
         </div>
         <div class="grid__element grid__element--4">
@@ -68,32 +70,129 @@
           ></div>
           <div class="grid__element__content grid__element__content--4">
             <i class="fa-solid fa-wifi"></i>
-            <h1 class="grid__element__title">Conectividad</h1>
-            <a class="grid__element__button" href="#">DESCUBRE MÁS</a>
+            <a onclick="navigateTo('conectividad')" class="grid__element__title grid__element__title--1">
+              Conectividad
+            </a>
+            
           </div>
         </div>
         <div class="grid__element grid__element--5">
           <div
-            class="grid__element__background grid__element__background--3"
+            class="grid__element__background grid__element__background--5"
           ></div>
-          <div class="grid__element__content grid__element__content--3">
+          <div class="grid__element__content grid__element__content--5">
             <i class="fa-solid fa-door-open"></i>
-            <h1 class="grid__element__title">Videoortero</h1>
-            <a class="grid__element__button" href="#">DESCUBRE MÁS</a>
+            <a onclick="navigateTo('videoportero')" class="grid__element__title grid__element__title--1">
+              Videoportero
+            </a>
+            
           </div>
         </div>
         <div class="grid__element grid__element--6">
           <div
-            class="grid__element__background grid__element__background--3"
+            class="grid__element__background grid__element__background--6"
           ></div>
-          <div class="grid__element__content grid__element__content--3">
+          <div class="grid__element__content grid__element__content--6">
             <i class="fa-solid fa-headphones"></i></i>
-            <h1 class="grid__element__title">Música y cine</h1>
-            <a class="grid__element__button" href="#">DESCUBRE MÁS</a>
+            <a onclick="navigateTo('musica')" class="grid__element__title grid__element__title--1">
+             Música y cine
+            </a>
           </div>
         </div>
       </div>
     </section>
+    <!----------------------------------------------------------------------------->
+    <!---------------------------------------- POPUPS ----------------------------->
+    <!----------------------------------------------------------------------------->
+    <div id="popup-iluminacion" class="popup" tabindex="1">
+      <div class="popup__container">
+        <div onclick="navigateTo('index')" class="button-close"><i class="fa-solid fa-xmark"></i></div>
+        <div class="popup__content">
+          <div class="section-alpha__top-line"></div>
+          <!------------------------------ Section ALPHA -------------------------------->
+          <section class="section-alpha">
+            <div class="section-alpha__container">
+              <div class="section-alpha__left">
+                <div class="section-alpha__image">
+                </div>
+              </div>
+              <div class="section-alpha__right">
+                <h1 class="section-alpha__title">HORARIOS</h1>
+                <ul class="section-alpha__list">
+                  <li class="section-alpha__list-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam.
+                  </li>
+                  <li class="section-alpha__list-element">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, laudantium quia? Ratione.</li>
+                  <li class="section-alpha__list-element">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  <li class="section-alpha__list-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur placeat ullam commodi?</li>
+                  <li class="section-alpha__list-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, veritatis!</li>
+                </ul>
+                <a class="button button__dark section-alpha__button" href="#">conoce los paquetes</a>
+              </div>
+            </div>
+          </section>
+          <!--------------------------------- END OF SECTION ---------------------------->
+          <!------------------------------ Section BETA -------------------------------->
+          <section class="section-beta">
+            <div class="section-beta__background">
+            </div>
+            <h1 class="section-beta__title">Crea el escenario perfecto desde la APP en el momento necesario</h1>
+            <div class="section-beta__text-box">
+              <h1 class="section-beta__text-box__title">ESCENAS INTELIGENTES</h1>
+              <ul class="section-beta__text-box__list">
+                <li class="section-beta__text-box__list__element">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, porro!</li>
+                <li class="section-beta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aliquid?</li>
+                <li class="section-beta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, neque laboriosam.</li>
+                <li class="section-beta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae sapiente!</li>
+                <li class="section-beta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum quo deleniti.</li>
+              </ul>
+              <a class="button button__light section-beta__button" href="#">conoce los paquetes</a>
+            </div>
+            <div class="section-beta__image"></div>
+          </section>
+          <!----------------------------------- END OF SECTION ---------------------------->
+          <!------------------------------ Section GAMA -------------------------------->
+          <section class="section-gama">
+            <div class="section-gama__container">
+              <div class="section-gama__left">
+                <h1 class="section-gama__title">ADULTOS MAYORES</h1>
+                <ul class="section-gama__list">
+                  <li class="section-gama__list-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam.
+                  </li>
+                  <li class="section-gama__list-element">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, laudantium quia? Ratione.</li>
+                  <li class="section-gama__list-element">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  <li class="section-gama__list-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur placeat ullam commodi?</li>
+                  <li class="section-gama__list-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, veritatis!</li>
+                </ul>
+                <a class="button button__dark" href="#">conoce los paquetes</a>
+              </div>
+              <div class="section-gama__right">
+                <div class="section-gama__image">
+                </div>
+              </div>
+            </div>
+          </section>
+          <!------------------------------------- END OF SECTION --------------------------->
+           <!------------------------------ Section BETA -------------------------------->
+           <section class="section-delta">
+            <div class="section-delta__background">
+            </div>
+            <div class="section-delta__text-box">
+              <h1 class="section-delta__text-box__title">ALEXA y GOOGLE</h1>
+              <ul class="section-delta__text-box__list">
+                <li class="section-delta__text-box__list__element">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, porro!</li>
+                <li class="section-delta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aliquid?</li>
+                <li class="section-delta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, neque laboriosam.</li>
+                <li class="section-delta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vitae sapiente!</li>
+                <li class="section-delta__text-box__list__element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum quo deleniti.</li>
+              </ul>
+              <a class="button button__light section-beta__button" href="#">conoce los paquetes</a>
+            </div>
+          </section>
+          <!----------------------------------- END OF SECTION ---------------------------->
+        </div>
+      </div>
+    </div>
     <script src="./js/init.js"></script>
+    <script src="./js/navigation.js"></script>
   </body>
 </html>

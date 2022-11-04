@@ -1,0 +1,29 @@
+.button-close {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 6.5rem;
+    right: 6.5rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale .1s ease-in, opacity .2s ease-in;
+    border-style: solid;
+    border-color: $color-black;
+    border-width: 2px;
+    border-radius: 4px;
+    opacity: 0;
+    &:hover {
+        scale: 1.3;
+    }
+    &:hover > i {
+        scale: 1.2;
+    }
+}
+
+.button-close i {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: scale .1s ease-in;
+    color: $color-black;
+}
