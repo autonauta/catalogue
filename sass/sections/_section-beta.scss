@@ -9,7 +9,7 @@
     &__background {
         width: 100%;
         height: 100%;
-        background: url("../img/compressjpeg/9.jpg");
+        background: url("../img/compressjpeg/1.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -23,8 +23,14 @@
         width: 55%;
         position: absolute;
         top: 8%;
+        @include respond(tab-land){
+            font-size: 3.3rem;
+        }
         @include respond(tab-port){
             width: 90%;
+        }
+        @include respond(phone){
+            width: 70%;
         }
     }
     &__text-box{
@@ -47,6 +53,17 @@
             translate: 0 30%;
             padding-left: 5%;
         }
+        @include respond(phone){
+            width: 80%;
+            bottom: 50%;
+            right: 50%;
+            translate: 50% 30%;
+            padding-left: 5%;
+            padding-right: 0;
+            align-self: center;
+            background-position: 0 0;
+            background-size: 1px 90%;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -65,12 +82,31 @@
             font-size: 1.8rem;
             margin-top: 5rem;
             margin-bottom: 4rem;
+            @include respond(tab-land){
+                font-size: 2.5rem;
+            }
             @include respond(tab-port){
                 font-size: 2.8rem;
             }
+            @include respond(phone){
+                font-size: 2.6rem;
+            }
+        }
+        &__list li {
+            @include respond(phone){
+                text-align: right;
+            }
+            
         }
         &__title {
             font-size: 5rem;
+            @include respond(tab-land){
+                font-size: 5rem;
+            }
+            @include respond(phone){
+                text-align: right;
+                font-size: 4.1rem;
+            }
         }
     }
     &__image {
@@ -105,5 +141,4 @@
     translate: -50% -50%;
     width: 60%;
     height: 27%;
-    background-color: grey;
 }

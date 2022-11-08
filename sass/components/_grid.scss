@@ -156,6 +156,9 @@
             &:hover {
                 scale: 1.1;
             }
+            @include respond(tab-land){
+                font-size: 2.2rem;
+            }
         }
     }
     &__element:hover > .grid__element__background {

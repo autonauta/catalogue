@@ -20,8 +20,7 @@
             translate: -8vw 0;
         }
         @include respond(phone){
-            width: 10%;
-            translate: -14vw 0;
+            display: none;
         }
     }
     &--1.underlined {

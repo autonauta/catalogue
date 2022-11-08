@@ -28,7 +28,7 @@
         align-items: center;
         @include respond(phone){
             width: 80%;
-            height:70%;
+            height:80%;
         }
     }
 
@@ -41,10 +41,20 @@
         translate: 0 50%;
         opacity: 0;
         transition: opacity .2s ease-in;
+        @include respond(phone){
+            flex-direction: column;
+            width: 100%;
+            bottom: 50%;
+            right: 50%;
+            translate: 50% 50%;
+        }
         &__title {
             font-size: 2.5rem;
             @include respond(tab-port){
                 font-size: 3rem;
+            }
+            @include respond(phone){
+                font-size: 4rem;
             }
         }
     }
@@ -63,7 +73,8 @@
             font-size: 7rem;
         }
         @include respond(phone){
-            font-size: 5rem;
+            font-size: 7rem;
+            margin-top: 3rem;
         }
     }
     &__servicios a i:hover {
@@ -118,7 +129,7 @@
             width: 22%;
         }
         @include respond(phone){
-            width: 20%;
+            width: 30%;
         }
     }
     
@@ -132,6 +143,7 @@
     font-size: 8rem;
     transition: opacity .5s ease-in;
     @include respond(phone){
+        top: 2%;
         width: 50%;
     }
 

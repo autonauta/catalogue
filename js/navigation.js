@@ -14,23 +14,73 @@ const navigateTo = (page) => {
       }, 300);
       break;
     case "seguridad":
-      console.log("seguridad");
+      $("#popup-seguridad").css({ visibility: "visible", opacity: "1" });
+      $("body").css({ "overflow-y": "hidden" });
+      setTimeout(() => {
+        $(".section-alpha__top-line").css({ "background-size": "100% 1px" });
+        setTimeout(() => {
+          $(".button-close").css({ opacity: "1" });
+          setTimeout(() => {
+            $(".section-alpha").css({ opacity: "1" });
+          }, 300);
+        }, 400);
+      }, 300);
 
       break;
     case "vigilancia":
-      console.log("vigilancia");
+      $("#popup-vigilancia").css({ visibility: "visible", opacity: "1" });
+      $("body").css({ "overflow-y": "hidden" });
+      setTimeout(() => {
+        $(".section-alpha__top-line").css({ "background-size": "100% 1px" });
+        setTimeout(() => {
+          $(".button-close").css({ opacity: "1" });
+          setTimeout(() => {
+            $(".section-alpha").css({ opacity: "1" });
+          }, 300);
+        }, 400);
+      }, 300);
 
       break;
     case "conectividad":
-      console.log("conectividad");
+      $("#popup-conectividad").css({ visibility: "visible", opacity: "1" });
+      $("body").css({ "overflow-y": "hidden" });
+      setTimeout(() => {
+        $(".section-alpha__top-line").css({ "background-size": "100% 1px" });
+        setTimeout(() => {
+          $(".button-close").css({ opacity: "1" });
+          setTimeout(() => {
+            $(".section-alpha").css({ opacity: "1" });
+          }, 300);
+        }, 400);
+      }, 300);
 
       break;
     case "videoportero":
-      console.log("videoportero");
+      $("#popup-videoportero").css({ visibility: "visible", opacity: "1" });
+      $("body").css({ "overflow-y": "hidden" });
+      setTimeout(() => {
+        $(".section-alpha__top-line").css({ "background-size": "100% 1px" });
+        setTimeout(() => {
+          $(".button-close").css({ opacity: "1" });
+          setTimeout(() => {
+            $(".section-alpha").css({ opacity: "1" });
+          }, 300);
+        }, 400);
+      }, 300);
 
       break;
     case "musica":
-      console.log("musica");
+      $("#popup-musica").css({ visibility: "visible", opacity: "1" });
+      $("body").css({ "overflow-y": "hidden" });
+      setTimeout(() => {
+        $(".section-alpha__top-line").css({ "background-size": "100% 1px" });
+        setTimeout(() => {
+          $(".button-close").css({ opacity: "1" });
+          setTimeout(() => {
+            $(".section-alpha").css({ opacity: "1" });
+          }, 300);
+        }, 400);
+      }, 300);
 
       break;
     case "index":
@@ -42,6 +92,11 @@ const navigateTo = (page) => {
           $("body").css({ "overflow-y": "auto" });
           setTimeout(() => {
             $("#popup-iluminacion").css({ visibility: "hidden", opacity: "0" });
+            $("#popup-seguridad").css({ visibility: "hidden", opacity: "0" });
+            $("#popup-vigilancia").css({ visibility: "hidden", opacity: "0" });
+            $("#popup-conectividad").css({ visibility: "hidden", opacity: "0" });
+            $("#popup-videoportero").css({ visibility: "hidden", opacity: "0" });
+            $("#popup-musica").css({ visibility: "hidden", opacity: "0" });
           }, 600);
         }, 400);
       }, 300);

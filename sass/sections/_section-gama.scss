@@ -35,6 +35,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         color: $color-black;
+        
         @include respond(tab-port){
             background: linear-gradient($color-black, $color-black);
             background-repeat: no-repeat;
@@ -43,23 +44,51 @@
             padding-left: 6rem;
         }
         &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 8rem;
-            width: 1rem;
-            background-color: $color-black;
-            translate: 0 20rem;
+            @include respond(tab-port){
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 8rem;
+                width: 1rem;
+                background-color: $color-black;
+                translate: 0 20rem;
+            }
         }
     }
     &__image {
         width: 90%;
         height: 70%;
-        background: url("../img/compressjpeg/13.jpg");
+        background: url("../img/compressjpeg/3.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        @include respond(tab-port){
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__image2 {
+        width: 90%;
+        height: 70%;
+        background: url("../img/compressjpeg/10.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: opacity(.6);
+        @include respond(tab-port){
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__image3 {
+        width: 90%;
+        height: 70%;
+        background: url("../img/compressjpeg/10.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter:grayscale(1) opacity(.6);
         @include respond(tab-port){
             width: 100%;
             height: 100%;
@@ -69,7 +98,6 @@
         position: relative;
         height: 100%;
         width: 100%;
-        background-color: grey;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -83,6 +111,8 @@
         @include respond(tab-port){
             padding: 0;
             background-size: 0 0;
+            background-color: black;
+            
         }
         &::after {
             content: "";
@@ -101,13 +131,27 @@
     &__title{
         font-size: 7rem;
         font-weight: 800;
+        @include respond(tab-land){
+            font-size: 5rem;
+        }
+        @include respond(phone){
+            text-align: left;
+            font-size: 4.1rem;
+        }
     }
     &__list{
         font-size: 1.8rem;
         margin-top: 5rem;
         margin-bottom: 4rem;
+        @include respond(tab-land){
+            font-size: 2.5rem;
+        }
         @include respond(tab-port){
             font-size: 2.8rem;
+        }
+        @include respond(phone){
+            font-size: 2.4rem;
+            text-align: left;
         }
     }
 }
