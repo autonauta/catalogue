@@ -2,17 +2,26 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: $color-white url("../img/compressjpeg/fondo_principal.jpg");
-    background-position: top;
-    background-size:cover;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $color-black;
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../img/compressjpeg/fondo_principal.jpg");
+        background-position: top;
+        background-size:cover;
+        background-repeat: no-repeat;
+        filter: opacity(.4);
+    }
 
     &__content {
         position: relative;
-        width: 92%;
+        width: 85%;
         height: 78%;
         display: flex;
         flex-direction: column;
@@ -23,13 +32,6 @@
         }
     }
 
-    &__by{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        font-size: 2.5rem;
-        translate: 0 50%;
-    }
     &__servicios {
         display: flex;
         align-items: center;
@@ -41,6 +43,9 @@
         transition: opacity .2s ease-in;
         &__title {
             font-size: 2.5rem;
+            @include respond(tab-port){
+                font-size: 3rem;
+            }
         }
     }
     &__servicios.show {
@@ -51,6 +56,12 @@
         font-size: 4rem;
         margin-left: 2rem;
         transition: scale .1s ease-in;
+        @include respond(tab-land){
+            font-size: 6rem;
+        }
+        @include respond(tab-port){
+            font-size: 7rem;
+        }
         @include respond(phone){
             font-size: 5rem;
         }
@@ -81,6 +92,9 @@
         width: 30%;
         opacity: 0;
         transition: opacity .2s ease-in, translate .4s ease-in;
+        @include respond(tab-land){
+            width: 40%;
+        }
         @include respond(phone){
             width: 50%;
         }
@@ -100,6 +114,9 @@
         top: 100%;
         width: 10%;
         left: 0;
+        @include respond(tab-port){
+            width: 22%;
+        }
         @include respond(phone){
             width: 20%;
         }

@@ -35,11 +35,11 @@ Breakpoint argument choices
     }
 
     @if $breakpoint ==tab-port {
-        @media (max-width: 50.625em) {
+        @media (max-width: 51.25em) {
             @content
         }
 
-        ; //810px
+        ; //820px
     }
 
     @if $breakpoint ==tab-land {

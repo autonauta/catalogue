@@ -10,6 +10,15 @@
         background-position: 0 100%;
         background-size: 0% 1px;
         transition: background-size .2s ease-in;
+        
+        @include respond(tab-land){
+            width: 55%;
+            translate: -8vw 0;
+        }
+        @include respond(tab-port){
+            width: 22%;
+            translate: -8vw 0;
+        }
         @include respond(phone){
             width: 10%;
             translate: -14vw 0;
