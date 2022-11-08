@@ -23,6 +23,9 @@
         width: 55%;
         position: absolute;
         top: 8%;
+        @include respond(tab-port){
+            width: 90%;
+        }
     }
     &__text-box{
         position: absolute;
@@ -39,6 +42,11 @@
         background-repeat: no-repeat;
         background-position: 0 100%;
         background-size: 1px 100%;
+        @include respond(tab-port){
+            bottom: 50%;
+            translate: 0 30%;
+            padding-left: 5%;
+        }
         &::after {
             content: "";
             position: absolute;
@@ -57,6 +65,9 @@
             font-size: 1.8rem;
             margin-top: 5rem;
             margin-bottom: 4rem;
+            @include respond(tab-port){
+                font-size: 2.8rem;
+            }
         }
         &__title {
             font-size: 5rem;
@@ -74,5 +85,25 @@
         background-position: center;
         background-size: cover;
         z-index: 1;
+        @include respond(tab-port){
+            left: -12rem;
+            translate: 0 20rem;
+            width: 70%;
+            height: 50%;
+        }
     }
+}
+
+.float-image{
+    background: url("../img/echo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 60%;
+    height: 27%;
+    background-color: grey;
 }
