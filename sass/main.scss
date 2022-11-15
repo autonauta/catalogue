@@ -6,6 +6,8 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./layout/header";
+@import "./layout/grid";
 @import "./layout/popup";
 @import "./layout/popup-paquetes";
 
@@ -14,8 +16,8 @@
 @import "./sections/section-gama";
 @import "./sections/section-delta";
 
-@import "./components/header";
-@import "./components/grid";
+
+
 @import "./components/navbar";
 @import "./components/line-container";
 @import "./components/button-close";

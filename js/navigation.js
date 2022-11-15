@@ -9,9 +9,9 @@ const navigateTo = (page) => {
           $(".button-close").css({ opacity: "1" });
           setTimeout(() => {
             $(".section-alpha").css({ opacity: "1" });
-          }, 300);
-        }, 400);
-      }, 300);
+          }, 200);
+        }, 300);
+      }, 200);
       break;
     case "seguridad":
       $("#popup-seguridad").css({ visibility: "visible", opacity: "1" });
@@ -22,9 +22,9 @@ const navigateTo = (page) => {
           $(".button-close").css({ opacity: "1" });
           setTimeout(() => {
             $(".section-alpha").css({ opacity: "1" });
-          }, 300);
-        }, 400);
-      }, 300);
+          }, 200);
+        }, 300);
+      }, 200);
 
       break;
     case "vigilancia":
@@ -36,9 +36,9 @@ const navigateTo = (page) => {
           $(".button-close").css({ opacity: "1" });
           setTimeout(() => {
             $(".section-alpha").css({ opacity: "1" });
-          }, 300);
-        }, 400);
-      }, 300);
+          }, 200);
+        }, 300);
+      }, 200);
 
       break;
     case "conectividad":
@@ -50,9 +50,9 @@ const navigateTo = (page) => {
           $(".button-close").css({ opacity: "1" });
           setTimeout(() => {
             $(".section-alpha").css({ opacity: "1" });
-          }, 300);
-        }, 400);
-      }, 300);
+          }, 200);
+        }, 300);
+      }, 200);
 
       break;
     case "videoportero":
@@ -64,9 +64,9 @@ const navigateTo = (page) => {
           $(".button-close").css({ opacity: "1" });
           setTimeout(() => {
             $(".section-alpha").css({ opacity: "1" });
-          }, 300);
-        }, 400);
-      }, 300);
+          }, 200);
+        }, 300);
+      }, 200);
 
       break;
     case "musica":
@@ -78,9 +78,9 @@ const navigateTo = (page) => {
           $(".button-close").css({ opacity: "1" });
           setTimeout(() => {
             $(".section-alpha").css({ opacity: "1" });
-          }, 300);
-        }, 400);
-      }, 300);
+          }, 200);
+        }, 300);
+      }, 200);
 
       break;
     case "index":
@@ -97,9 +97,10 @@ const navigateTo = (page) => {
             $("#popup-conectividad").css({ visibility: "hidden", opacity: "0" });
             $("#popup-videoportero").css({ visibility: "hidden", opacity: "0" });
             $("#popup-musica").css({ visibility: "hidden", opacity: "0" });
+            $("#popup-paquetes").css({ visibility: "hidden", opacity: "0" });
           }, 600);
-        }, 400);
-      }, 300);
+        }, 300);
+      }, 200);
 
       break;
       case "paquetes":
@@ -117,10 +118,10 @@ const navigateTo = (page) => {
             $("#popup-musica").css({ visibility: "hidden", opacity: "0" });
             setTimeout(() => {
               openPaquetes();
-            }, 400);
-          }, 600);
-        }, 400);
-      }, 300);
+            }, 300);
+          }, 300);
+        }, 300);
+      }, 200);
     default:
       break;
   }
@@ -134,7 +135,7 @@ function openPaquetes() {
       $(".button-close").css({ opacity: "1" });
       setTimeout(() => {
         $(".section-alpha").css({ opacity: "1" });
-      }, 300);
-    }, 400);
-  }, 300);
+      }, 200);
+    }, 300);
+  }, 200);
 }
