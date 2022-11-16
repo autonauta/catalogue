@@ -1039,7 +1039,7 @@ input[type=submit] {
 }
 .section-gama__image {
   width: 90%;
-  height: 70%;
+  height: 100%;
   background: url("../img/compressjpeg/3.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1165,9 +1165,9 @@ input[type=submit] {
 .section-gama__right img.img1 {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translate(-45%, 40%);
-  width: 30%;
+  left: 0;
+  transform: translate(0, 40%);
+  width: 50%;
   height: auto;
   align-self: center;
   background-color: transparent;
