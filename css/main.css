@@ -1084,12 +1084,12 @@ input[type=submit] {
 }
 .section-gama__image3 {
   width: 90%;
-  height: 70%;
+  height: 100%;
   background: url("../img/compressjpeg/10.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: grayscale(1) opacity(0.6);
+  filter: grayscale(0.5);
 }
 @media (max-width: 51.25em) {
   .section-gama__image3 {
@@ -1195,6 +1195,16 @@ input[type=submit] {
   left: 50%;
   transform: translate(-45%, 40%);
   width: 100%;
+  height: auto;
+  align-self: center;
+  background-color: transparent;
+}
+.section-gama__right img.img3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(-1) translate(0rem, 15rem);
+  width: 60%;
   height: auto;
   align-self: center;
   background-color: transparent;
