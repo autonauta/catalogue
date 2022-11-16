@@ -174,7 +174,26 @@
         translate: 0 12rem;
         height: 55%;
         aspect-ratio: 12 / 16;
-        background: url("../../img/equipos/sensor.png");
+        background: url("../img/equipos/sensor.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        @include respond(tab-port){
+            left: -12rem;
+            translate: 0 20rem;
+            width: 70%;
+            height: 50%;
+        }
+    }
+    &__image3 {
+        position: absolute;
+        bottom: 0;
+        left: 10rem;
+        translate: 0 12rem;
+        height: 55%;
+        aspect-ratio: 12 / 16;
+        background: url("../img/phone_hand_hilook.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
