@@ -70,8 +70,8 @@
     }
     &__image2 {
         width: 90%;
-        height: 70%;
-        background: url("../img/compressjpeg/10.jpg");
+        height: 100%;
+        background: black url("../img/compressjpeg/9.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -166,10 +166,25 @@
             }
         }
     }
-    &__right img {
-        width: 15rem;
+    &__right img.img1 {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-45%, 40%);
+        width: 30%;
         height: auto;
-        align-self: flex-start;
+        align-self: center;
+        background-color: transparent;
+    }
+    &__right img.img2 {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-45%, 40%);
+        width: 100%;
+        height: auto;
+        align-self: center;
+        background-color: transparent;
     }
     &__title{
         font-size: 5rem;
@@ -183,7 +198,7 @@
         }
     }
     &__list{
-        font-size: 1.8rem;
+        font-size: 2.3rem;
         margin-top: 5rem;
         margin-bottom: 4rem;
         @include respond(tab-land){
