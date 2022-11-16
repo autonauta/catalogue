@@ -166,6 +166,11 @@
             }
         }
     }
+    &__right img {
+        width: 15rem;
+        height: auto;
+        align-self: flex-start;
+    }
     &__title{
         font-size: 5rem;
         font-weight: 800;

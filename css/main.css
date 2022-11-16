@@ -1107,6 +1107,11 @@ input[type=submit] {
     display: none;
   }
 }
+.section-gama__right img {
+  width: 15rem;
+  height: auto;
+  align-self: flex-start;
+}
 .section-gama__title {
   font-size: 5rem;
   font-weight: 800;
