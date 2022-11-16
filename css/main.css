@@ -732,7 +732,7 @@ input[type=submit] {
   }
 }
 .section-alpha__list {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
@@ -770,6 +770,15 @@ input[type=submit] {
   background-size: cover;
   filter: opacity(0.2);
 }
+.section-beta__background2 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/13.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.5) blur(2px);
+}
 .section-beta__title {
   font-size: 4rem;
   font-weight: 400;
@@ -791,6 +800,31 @@ input[type=submit] {
 }
 @media (max-width: 40.625em) {
   .section-beta__title {
+    width: 70%;
+  }
+}
+.section-beta__title2 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  width: 42%;
+  position: absolute;
+  top: 8%;
+  left: 20rem;
+}
+@media (max-width: 75em) {
+  .section-beta__title2 {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 51.25em) {
+  .section-beta__title2 {
+    width: 90%;
+  }
+}
+@media (max-width: 40.625em) {
+  .section-beta__title2 {
     width: 70%;
   }
 }
@@ -847,7 +881,7 @@ input[type=submit] {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
@@ -900,6 +934,27 @@ input[type=submit] {
 }
 @media (max-width: 51.25em) {
   .section-beta__image {
+    left: -12rem;
+    translate: 0 20rem;
+    width: 70%;
+    height: 50%;
+  }
+}
+.section-beta__image2 {
+  position: absolute;
+  bottom: 0;
+  left: 10rem;
+  translate: 0 12rem;
+  width: 28%;
+  height: 65%;
+  background: url("../../img/equipos/sensor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+@media (max-width: 51.25em) {
+  .section-beta__image2 {
     left: -12rem;
     translate: 0 20rem;
     width: 70%;
@@ -998,8 +1053,8 @@ input[type=submit] {
 }
 .section-gama__image2 {
   width: 90%;
-  height: 70%;
-  background: url("../img/compressjpeg/10.jpg");
+  height: 100%;
+  background: black url("../img/compressjpeg/9.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1107,10 +1162,25 @@ input[type=submit] {
     display: none;
   }
 }
-.section-gama__right img {
-  width: 15rem;
+.section-gama__right img.img1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-45%, 40%);
+  width: 30%;
   height: auto;
-  align-self: flex-start;
+  align-self: center;
+  background-color: transparent;
+}
+.section-gama__right img.img2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-45%, 40%);
+  width: 100%;
+  height: auto;
+  align-self: center;
+  background-color: transparent;
 }
 .section-gama__title {
   font-size: 5rem;
@@ -1128,7 +1198,7 @@ input[type=submit] {
   }
 }
 .section-gama__list {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
@@ -1157,11 +1227,21 @@ input[type=submit] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: hidden;
 }
 .section-delta__background {
   width: 100%;
   height: 100%;
   background: url("../img/compressjpeg/8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.4);
+}
+.section-delta__background2 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1180,9 +1260,9 @@ input[type=submit] {
   position: absolute;
   bottom: 4rem;
   right: 0;
+  width: 61%;
   padding-right: 10rem;
   padding-bottom: 2rem;
-  padding-left: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1225,7 +1305,7 @@ input[type=submit] {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
@@ -1271,6 +1351,21 @@ input[type=submit] {
   background-position: center;
   background-size: cover;
   z-index: 1;
+}
+
+.img-delta {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-4rem, 6rem);
+}
+
+.img-delta {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 nav {

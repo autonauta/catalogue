@@ -15,6 +15,15 @@
         background-size: cover;
         filter: opacity(.2);
     }
+    &__background2 {
+        width: 100%;
+        height: 100%;
+        background: url("../img/compressjpeg/13.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: opacity(.5) blur(2px);
+    }
     &__title{
         font-size: 4rem;
         font-weight: 400;
@@ -23,6 +32,25 @@
         width: 55%;
         position: absolute;
         top: 8%;
+        @include respond(tab-land){
+            font-size: 3.3rem;
+        }
+        @include respond(tab-port){
+            width: 90%;
+        }
+        @include respond(phone){
+            width: 70%;
+        }
+    }
+    &__title2{
+        font-size: 4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: left;
+        width: 42%;
+        position: absolute;
+        top: 8%;
+        left: 20rem;
         @include respond(tab-land){
             font-size: 3.3rem;
         }
@@ -81,7 +109,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            font-size: 1.8rem;
+            font-size: 2.3rem;
             margin-top: 5rem;
             margin-bottom: 4rem;
             @include respond(tab-land){
@@ -130,6 +158,27 @@
             height: 50%;
         }
     }
+    &__image2 {
+        position: absolute;
+        bottom: 0;
+        left: 10rem;
+        translate: 0 12rem;
+        width:28%;
+        height: 65%;
+        background: url("../../img/equipos/sensor.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        @include respond(tab-port){
+            left: -12rem;
+            translate: 0 20rem;
+            width: 70%;
+            height: 50%;
+        }
+    }
+    
+    
 }
 
 .float-image{
