@@ -779,6 +779,15 @@ input[type=submit] {
   background-size: cover;
   filter: opacity(0.5) blur(2px);
 }
+.section-beta__background3 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.5) blur(2px);
+}
 .section-beta__title {
   font-size: 4rem;
   font-weight: 400;
@@ -924,8 +933,8 @@ input[type=submit] {
   bottom: 0;
   left: 10rem;
   translate: 0 12rem;
-  width: 28%;
-  height: 65%;
+  height: 70%;
+  aspect-ratio: 12/16;
   background: url("../img/phone_hand.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -945,8 +954,8 @@ input[type=submit] {
   bottom: 0;
   left: 10rem;
   translate: 0 12rem;
-  width: 28%;
-  height: 65%;
+  height: 55%;
+  aspect-ratio: 12/16;
   background: url("../../img/equipos/sensor.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -960,19 +969,6 @@ input[type=submit] {
     width: 70%;
     height: 50%;
   }
-}
-
-.float-image {
-  background: url("../img/echo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  width: 60%;
-  height: 27%;
 }
 
 .section-gama {
@@ -1358,14 +1354,15 @@ input[type=submit] {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate(-4rem, 6rem);
+  transform: translate(-4rem, 8rem);
 }
 
-.img-delta {
+.img-delta2 {
   width: 50%;
   position: absolute;
   bottom: 0;
   left: 0;
+  transform: translateX(-6rem);
 }
 
 nav {
