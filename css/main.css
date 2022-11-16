@@ -1203,7 +1203,7 @@ input[type=submit] {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: scaleX(-1) translate(0rem, 15rem);
+  transform: translate(0rem, 12rem);
   width: 60%;
   height: auto;
   align-self: center;
@@ -1394,6 +1394,13 @@ input[type=submit] {
   bottom: 0;
   left: 0;
   transform: translateX(-6rem);
+}
+
+.img-delta3 {
+  width: 30%;
+  position: absolute;
+  bottom: 2rem;
+  left: 10rem;
 }
 
 nav {
