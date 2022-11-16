@@ -991,6 +991,27 @@ input[type=submit] {
     height: 50%;
   }
 }
+.section-beta__image4 {
+  position: absolute;
+  bottom: 0;
+  left: 10rem;
+  translate: 0 12rem;
+  height: 55%;
+  aspect-ratio: 12/16;
+  background: url("../img/phone_hand_deco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+@media (max-width: 51.25em) {
+  .section-beta__image4 {
+    left: -12rem;
+    translate: 0 20rem;
+    width: 70%;
+    height: 50%;
+  }
+}
 
 .section-gama {
   width: 100%;
@@ -1099,12 +1120,11 @@ input[type=submit] {
 }
 .section-gama__image4 {
   width: 90%;
-  height: 70%;
-  background: url("../img/compressjpeg/10.jpg");
+  height: 100%;
+  background: url("../img/compressjpeg/5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: opacity(0.6);
 }
 @media (max-width: 51.25em) {
   .section-gama__image4 {
@@ -1205,6 +1225,16 @@ input[type=submit] {
   left: 0;
   transform: translate(0rem, 12rem);
   width: 60%;
+  height: auto;
+  align-self: center;
+  background-color: transparent;
+}
+.section-gama__right img.img4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0rem, 12rem);
+  width: 40%;
   height: auto;
   align-self: center;
   background-color: transparent;
