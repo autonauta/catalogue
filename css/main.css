@@ -788,6 +788,33 @@ input[type=submit] {
   background-size: cover;
   filter: opacity(0.5) blur(2px);
 }
+.section-beta__background4 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.5) blur(2px);
+}
+.section-beta__background5 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.5) blur(2px);
+}
+.section-beta__background6 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.5) blur(2px);
+}
 .section-beta__title {
   font-size: 4rem;
   font-weight: 400;
@@ -933,7 +960,7 @@ input[type=submit] {
   bottom: 0;
   left: 10rem;
   translate: 0 12rem;
-  height: 70%;
+  height: 65%;
   aspect-ratio: 12/16;
   background: url("../img/phone_hand.png");
   background-repeat: no-repeat;
@@ -954,7 +981,7 @@ input[type=submit] {
   bottom: 0;
   left: 10rem;
   translate: 0 12rem;
-  height: 55%;
+  height: 65%;
   aspect-ratio: 12/16;
   background: url("../img/equipos/sensor.png");
   background-repeat: no-repeat;
@@ -975,7 +1002,7 @@ input[type=submit] {
   bottom: 0;
   left: 10rem;
   translate: 0 12rem;
-  height: 55%;
+  height: 65%;
   aspect-ratio: 12/16;
   background: url("../img/phone_hand_hilook.png");
   background-repeat: no-repeat;
@@ -996,7 +1023,7 @@ input[type=submit] {
   bottom: 0;
   left: 10rem;
   translate: 0 12rem;
-  height: 55%;
+  height: 65%;
   aspect-ratio: 12/16;
   background: url("../img/phone_hand_deco.png");
   background-repeat: no-repeat;
@@ -1006,6 +1033,48 @@ input[type=submit] {
 }
 @media (max-width: 51.25em) {
   .section-beta__image4 {
+    left: -12rem;
+    translate: 0 20rem;
+    width: 70%;
+    height: 50%;
+  }
+}
+.section-beta__image5 {
+  position: absolute;
+  bottom: 0;
+  left: 10rem;
+  translate: 0 12rem;
+  height: 65%;
+  aspect-ratio: 12/16;
+  background: url("../img/equipos/videoportero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+@media (max-width: 51.25em) {
+  .section-beta__image5 {
+    left: -12rem;
+    translate: 0 20rem;
+    width: 70%;
+    height: 50%;
+  }
+}
+.section-beta__image6 {
+  position: absolute;
+  bottom: 0;
+  left: 10rem;
+  translate: 0 12rem;
+  height: 65%;
+  aspect-ratio: 12/16;
+  background: url("../img/phone_hand_sonos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+@media (max-width: 51.25em) {
+  .section-beta__image6 {
     left: -12rem;
     translate: 0 20rem;
     width: 70%;
@@ -1134,12 +1203,11 @@ input[type=submit] {
 }
 .section-gama__image5 {
   width: 90%;
-  height: 70%;
-  background: url("../img/compressjpeg/10.jpg");
+  height: 100%;
+  background: url("../img/compressjpeg/3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: opacity(0.6);
 }
 @media (max-width: 51.25em) {
   .section-gama__image5 {
@@ -1149,12 +1217,11 @@ input[type=submit] {
 }
 .section-gama__image6 {
   width: 90%;
-  height: 70%;
-  background: url("../img/compressjpeg/10.jpg");
+  height: 100%;
+  background: url("../img/compressjpeg/1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: opacity(0.6);
 }
 @media (max-width: 51.25em) {
   .section-gama__image6 {
@@ -1233,8 +1300,28 @@ input[type=submit] {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate(0rem, 12rem);
-  width: 40%;
+  transform: translate(4rem, 12rem);
+  width: 50%;
+  height: auto;
+  align-self: center;
+  background-color: transparent;
+}
+.section-gama__right img.img5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(4rem, 12rem);
+  width: 60%;
+  height: auto;
+  align-self: center;
+  background-color: transparent;
+}
+.section-gama__right img.img6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(4rem, 12rem);
+  width: 60%;
   height: auto;
   align-self: center;
   background-color: transparent;
@@ -1299,6 +1386,24 @@ input[type=submit] {
   width: 100%;
   height: 100%;
   background: url("../img/compressjpeg/3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.4);
+}
+.section-delta__background3 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.4);
+}
+.section-delta__background4 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/compressjpeg/1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1427,6 +1532,20 @@ input[type=submit] {
 }
 
 .img-delta3 {
+  width: 30%;
+  position: absolute;
+  bottom: 2rem;
+  left: 10rem;
+}
+
+.img-delta5 {
+  width: 30%;
+  position: absolute;
+  bottom: 2rem;
+  left: 10rem;
+}
+
+.img-delta6 {
   width: 30%;
   position: absolute;
   bottom: 2rem;

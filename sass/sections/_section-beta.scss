@@ -33,6 +33,33 @@
         background-size: cover;
         filter: opacity(.5) blur(2px);
     }
+    &__background4 {
+        width: 100%;
+        height: 100%;
+        background: url("../img/compressjpeg/6.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: opacity(.5) blur(2px);
+    }
+    &__background5 {
+        width: 100%;
+        height: 100%;
+        background: url("../img/compressjpeg/2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: opacity(.5) blur(2px);
+    }
+    &__background6 {
+        width: 100%;
+        height: 100%;
+        background: url("../img/compressjpeg/9.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: opacity(.5) blur(2px);
+    }
     &__title{
         font-size: 4rem;
         font-weight: 400;
@@ -153,7 +180,7 @@
         bottom: 0;
         left: 10rem;
         translate: 0 12rem;
-        height: 70%;
+        height: 65%;
         aspect-ratio: 12 / 16;
         background: url("../img/phone_hand.png");
         background-repeat: no-repeat;
@@ -172,7 +199,7 @@
         bottom: 0;
         left: 10rem;
         translate: 0 12rem;
-        height: 55%;
+        height: 65%;
         aspect-ratio: 12 / 16;
         background: url("../img/equipos/sensor.png");
         background-repeat: no-repeat;
@@ -191,7 +218,7 @@
         bottom: 0;
         left: 10rem;
         translate: 0 12rem;
-        height: 55%;
+        height: 65%;
         aspect-ratio: 12 / 16;
         background: url("../img/phone_hand_hilook.png");
         background-repeat: no-repeat;
@@ -210,9 +237,47 @@
         bottom: 0;
         left: 10rem;
         translate: 0 12rem;
-        height: 55%;
+        height: 65%;
         aspect-ratio: 12 / 16;
         background: url("../img/phone_hand_deco.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        @include respond(tab-port){
+            left: -12rem;
+            translate: 0 20rem;
+            width: 70%;
+            height: 50%;
+        }
+    }
+    &__image5 {
+        position: absolute;
+        bottom: 0;
+        left: 10rem;
+        translate: 0 12rem;
+        height: 65%;
+        aspect-ratio: 12 / 16;
+        background: url("../img/equipos/videoportero.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        @include respond(tab-port){
+            left: -12rem;
+            translate: 0 20rem;
+            width: 70%;
+            height: 50%;
+        }
+    }
+    &__image6 {
+        position: absolute;
+        bottom: 0;
+        left: 10rem;
+        translate: 0 12rem;
+        height: 65%;
+        aspect-ratio: 12 / 16;
+        background: url("../img/phone_hand_sonos.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
