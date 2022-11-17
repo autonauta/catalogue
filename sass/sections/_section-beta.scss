@@ -193,6 +193,13 @@
             width: 70%;
             height: 50%;
         }
+        @include respond(phone){
+            left: -6rem;
+            translate: 0 20rem;
+            height: 50%;
+            width:70%;
+            background-position: right;
+        }
     }
     &__image2 {
         position: absolute;
@@ -211,6 +218,12 @@
             translate: 0 20rem;
             width: 70%;
             height: 50%;
+        }
+        @include respond(phone){
+            left: -6rem;
+            translate: 0 15rem;
+            height: 40%;
+            width:70%;
         }
     }
     &__image3 {
@@ -231,6 +244,13 @@
             width: 70%;
             height: 50%;
         }
+        @include respond(phone){
+            left: -6rem;
+            translate: 0 20rem;
+            height: 50%;
+            width:70%;
+            background-position: right;
+        }
     }
     &__image4 {
         position: absolute;
@@ -249,6 +269,13 @@
             translate: 0 20rem;
             width: 70%;
             height: 50%;
+        }
+        @include respond(phone){
+            left: -6rem;
+            translate: 0 20rem;
+            height: 50%;
+            width:70%;
+            background-position: right;
         }
     }
     &__image5 {
@@ -269,6 +296,13 @@
             width: 70%;
             height: 50%;
         }
+        @include respond(phone){
+            left: -6rem;
+            translate: 0 20rem;
+            height: 50%;
+            width:70%;
+            background-position: right;
+        }
     }
     &__image6 {
         position: absolute;
@@ -287,6 +321,13 @@
             translate: 0 20rem;
             width: 70%;
             height: 50%;
+        }
+        @include respond(phone){
+            left: -6rem;
+            translate: 0 20rem;
+            height: 50%;
+            width:70%;
+            background-position: right;
         }
     }
     
