@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     overflow-y: hidden;
+    overflow-x: hidden;
     &__background {
         width: 100%;
         height: 100%;
@@ -15,6 +16,9 @@
         background-position: center;
         background-size: cover;
         filter: opacity(.4);
+        @include respond(tab-port){
+            filter: opacity(.3);
+        }
     }
     &__background2 {
         width: 100%;
@@ -67,16 +71,22 @@
         background-repeat: no-repeat;
         background-position: 0 100%;
         background-size: 1px 100%;
-        @include respond(phone){
-            width: 80%;
-            bottom: 8rem;
+       
+        @include respond(tab-port){
+            bottom: 50%;
             right: 50%;
-            translate: 50% 0;
-            padding-left: 5%;
+            width: 85%;
+            transform: translateX(50%);
+            padding-left: 4rem;
             padding-right: 0;
-            align-self: center;
-            background-position: 0 0;
-            background-size: 1px 90%;
+        }
+        @include respond(phone){
+            bottom: 50%;
+            right: 50%;
+            width: 85%;
+            transform: translateX(50%);
+            padding-left: 4rem;
+            padding-right: 0;
         }
         &::after {
             content: "";
@@ -110,38 +120,33 @@
                 text-align: right;
             }
         }
+        &__list li {
+            font-weight: 400;
+        }
         &__title {
-            font-size: 5rem;
-            @include respond(tab-land){
-                font-size: 5rem;
-            }
             @include respond(phone){
                 text-align: right;
-                font-size: 4.1rem;
             }
         }
-    }
-    &__image {
-        position: absolute;
-        bottom: 0;
-        left: 10rem;
-        translate: 0 12rem;
-        width:25%;
-        height: 65%;
-        background: grey url("../../img/house_small.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        z-index: 1;
     }
 }
 
 .img-delta {
     width: 50%;
     position: absolute;
-    bottom: 0;
+    bottom: 3rem;
     left: 0;
     transform: translate(-4rem, 8rem);
+    @include respond(tab-port){
+        left: -12rem;
+        translate: 15rem -4rem;
+        width: 100%;
+    }
+    @include respond(phone){
+        left: 50%;
+        translate: -45% -10rem;
+        width: 120%;
+    }
 }
 .img-delta2 {
     width: 50%;
@@ -149,22 +154,56 @@
     bottom: 0;
     left: 0;
     transform: translateX(-6rem);
+    @include respond(tab-port){
+        left: 50%;
+        translate: -45% -4rem;
+        width: 100%;
+    }
+    @include respond(phone){
+        translate: 10rem -10rem;
+        width: 120%;
+    }
 }
 .img-delta3 {
     width: 30%;
     position: absolute;
     bottom: 2rem;
     left: 10rem;
+    @include respond(tab-port){
+        left: 50%;
+        translate: -50% -4rem;
+        width: 80%;
+    }
 }
 .img-delta5 {
     width: 30%;
     position: absolute;
     bottom: 2rem;
     left: 10rem;
+    @include respond(tab-port){
+        left: 50%;
+        translate: -50% -4rem;
+        width: 70%;
+    }
+    @include respond(phone){
+        left: 50%;
+        translate: -50% -4rem;
+        width: 80%;
+    }
 }
 .img-delta6 {
     width: 30%;
     position: absolute;
     bottom: 2rem;
     left: 10rem;
+    @include respond(tab-port){
+        left: 50%;
+        translate: -50% -4rem;
+        width: 60%;
+    }
+    @include respond(phone){
+        left: 50%;
+        translate: -50% -4rem;
+        width: 60%;
+    }
 }

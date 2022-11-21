@@ -116,19 +116,19 @@
         text-align: right;
         @include respond(tab-port){
             bottom: 50%;
-            translate: 0 30%;
-            padding-left: 5%;
+            right: 50%;
+            width: 85%;
+            transform: translateX(50%);
+            padding-left: 4rem;
+            padding-right: 0;
         }
         @include respond(phone){
-            width: 80%;
-            bottom: 50%;
+            bottom: 42%;
             right: 50%;
-            translate: 50% 30%;
-            padding-left: 5%;
+            width: 85%;
+            transform: translateX(50%);
+            padding-left: 4rem;
             padding-right: 0;
-            align-self: center;
-            background-position: 0 0;
-            background-size: 1px 90%;
         }
         &::after {
             content: "";
@@ -145,33 +145,20 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            font-size: 2.3rem;
             margin-top: 5rem;
             margin-bottom: 4rem;
-            @include respond(tab-land){
-                font-size: 2.5rem;
-            }
-            @include respond(tab-port){
-                font-size: 2.8rem;
-            }
-            @include respond(phone){
-                font-size: 2.6rem;
-            }
         }
         &__list li {
+            font-weight: 200;
             @include respond(phone){
                 text-align: right;
             }
             
         }
         &__title {
-            font-size: 5rem;
-            @include respond(tab-land){
-                font-size: 5rem;
-            }
+            
             @include respond(phone){
                 text-align: right;
-                font-size: 4.1rem;
             }
         }
     }
@@ -187,10 +174,13 @@
         background-position: center;
         background-size: cover;
         z-index: 1;
+        @include respond(tab-land){
+            left: 0;
+        }
         @include respond(tab-port){
             left: -12rem;
-            translate: 0 20rem;
-            width: 70%;
+            translate: 10rem 20rem;
+            width: 60%;
             height: 50%;
         }
         @include respond(phone){
@@ -213,10 +203,12 @@
         background-position: center;
         background-size: cover;
         z-index: 1;
+        @include respond(tab-land){
+            left: 0;
+            height: 60%;
+        }
         @include respond(tab-port){
-            left: -12rem;
-            translate: 0 20rem;
-            width: 70%;
+            translate: 10rem 13rem;
             height: 50%;
         }
         @include respond(phone){
@@ -240,8 +232,8 @@
         z-index: 1;
         @include respond(tab-port){
             left: -12rem;
-            translate: 0 20rem;
-            width: 70%;
+            translate: 10rem 20rem;
+            width: 60%;
             height: 50%;
         }
         @include respond(phone){
@@ -266,8 +258,8 @@
         z-index: 1;
         @include respond(tab-port){
             left: -12rem;
-            translate: 0 20rem;
-            width: 70%;
+            translate: 10rem 20rem;
+            width: 60%;
             height: 50%;
         }
         @include respond(phone){
@@ -291,16 +283,16 @@
         background-size: cover;
         z-index: 1;
         @include respond(tab-port){
-            left: -12rem;
-            translate: 0 20rem;
-            width: 70%;
+            left: 50%;
+            translate: -50% 14rem;
+            width: 60%;
             height: 50%;
         }
         @include respond(phone){
-            left: -6rem;
-            translate: 0 20rem;
+            left: 50%;
+            translate: -50% 14rem;
             height: 50%;
-            width:70%;
+            width:85%;
             background-position: right;
         }
     }
@@ -317,14 +309,14 @@
         background-size: cover;
         z-index: 1;
         @include respond(tab-port){
-            left: -12rem;
-            translate: 0 20rem;
-            width: 70%;
+            left: 20%;
+            translate: -50% 14rem;
+            width: 60%;
             height: 50%;
         }
         @include respond(phone){
-            left: -6rem;
-            translate: 0 20rem;
+            left: 50%;
+            translate: -50% 14rem;
             height: 50%;
             width:70%;
             background-position: right;
