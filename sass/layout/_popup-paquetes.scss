@@ -23,16 +23,10 @@
     }
     &__content {
         width: 100%;
-        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         transition: background-size .3s ease-in .1s;
-    }
-    &__section {
-        width: 100vw;
-        height: 100vh;
-        background-color: red;
     }
 }
