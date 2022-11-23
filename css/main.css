@@ -190,7 +190,7 @@ input[type=submit] {
   color: #F3F4F4;
   font-size: 3rem;
   font-weight: 600;
-  z-index: 100;
+  z-index: 99;
 }
 @media (max-width: 75em) {
   .type-fixed {
