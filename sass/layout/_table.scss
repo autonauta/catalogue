@@ -41,6 +41,9 @@
     width: 100%;
     padding: 0 1rem;
     padding-left: 3rem;
+    @include respond(phone){
+        padding: .5rem .5rem;
+    }
 }
 
 .table-value {
@@ -145,6 +148,9 @@
     
     background-color: rgba(202, 172, 1, 0.66);
     font-size: 1.8rem;
+    @include respond(tab-land){
+        font-size: 1.6rem;
+    }
     &__iluminacion {
         grid-row: 5 / 6;
     }

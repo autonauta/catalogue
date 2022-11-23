@@ -2,6 +2,9 @@
     width: 60%;
     height: 20rem;
     margin-top: 7rem;
+    @include respond(tab-port){
+        width: 80%;
+    }
 }
 .description-grid {
     width: 100%;
@@ -9,7 +12,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 4rem 15rem;
-    grid-gap: .5rem;
+    grid-gap: 1rem;
+    row-gap: .5rem;
+    @include respond(tab-land){
+        grid-template-rows: 4rem 18rem;
+    }
+    @include respond(tab-port){
+        grid-template-rows: 4rem 24rem;
+    }
+    @include respond(phone){
+        grid-template-rows: 4rem 30rem;
+    }
     &__space {
         width: 100%;
         height: 100%;
@@ -18,6 +31,9 @@
         justify-content: center;
         align-items: center;
         padding: 0 2rem;
+        @include respond(phone){
+            padding: 0 .5rem;
+        }
         &--1,&--2,&--3 {
             background-color: rgb(231, 231, 231);
             color: $color-black;
@@ -40,6 +56,10 @@
             color: $color-black;
             font-size: 1.6rem;
             text-align: center;
+            @include respond(tab-port){
+                font-size: 1.7rem;
+            }
+            
         }
         &--4 {
             grid-column: 1 / 2;
