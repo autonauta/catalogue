@@ -1,5 +1,5 @@
 
-const paquetes = require ("./js/paquetes");
+const paquetes = require("./js/paquetes");
 
 async function getProducts() {
   console.log("entered to getProducts function.");
