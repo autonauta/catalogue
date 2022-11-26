@@ -9,6 +9,7 @@ async function getProducts() {
     if(!products) console.log("No products received");
     else {
       console.log("Products: " + JSON.stringify(products,null,4));
+
     }
   } catch (err) {
     console.log(err);
