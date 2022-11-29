@@ -26,6 +26,7 @@
     }
     @include respond(phone){
         grid-template-columns: 45% repeat(3, 1fr);
+        width: 90%;
     }
     
     &__iluminacion {

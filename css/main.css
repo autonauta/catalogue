@@ -846,6 +846,11 @@ input[type=submit] {
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 40.625em) {
+  .paquetes-description {
+    width: 90%;
+  }
+}
 
 .description-grid {
   width: 100%;
@@ -2080,6 +2085,7 @@ input[type=submit] {
 @media (max-width: 40.625em) {
   .table-paquetes {
     grid-template-columns: 45% repeat(3, 1fr);
+    width: 90%;
   }
 }
 .table-paquetes__iluminacion {

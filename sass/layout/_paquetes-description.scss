@@ -10,6 +10,9 @@
         width: 80%;
         margin-bottom: 1rem;
     }
+    @include respond(phone){
+        width: 90%;
+    }
 }
 .description-grid {
     width: 100%;
