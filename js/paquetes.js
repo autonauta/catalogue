@@ -1,4 +1,4 @@
-export const paquetes = {
+const paquetes = {
   iluminacion: {
     basico: [
       {
@@ -242,3 +242,5 @@ export const paquetes = {
     ],
   },
 };
+
+export default paquetes;
