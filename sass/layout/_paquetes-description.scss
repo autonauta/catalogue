@@ -1,9 +1,14 @@
 .paquetes-description {
     width: 60%;
     height: 20rem;
-    margin-top: 7rem;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+    @include respond(tab-land){
+        width: 70%;
+    }
     @include respond(tab-port){
         width: 80%;
+        margin-bottom: 1rem;
     }
 }
 .description-grid {

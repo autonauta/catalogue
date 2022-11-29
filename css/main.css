@@ -832,11 +832,18 @@ input[type=submit] {
 .paquetes-description {
   width: 60%;
   height: 20rem;
-  margin-top: 7rem;
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 75em) {
+  .paquetes-description {
+    width: 70%;
+  }
 }
 @media (max-width: 51.25em) {
   .paquetes-description {
     width: 80%;
+    margin-bottom: 1rem;
   }
 }
 
