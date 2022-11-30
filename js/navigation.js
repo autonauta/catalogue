@@ -139,5 +139,3 @@ function openPaquetes() {
     }, 300);
   }, 200);
 }
-openPaquetes();
-$("body").css({ "overflow-y": "hidden" });
