@@ -352,7 +352,7 @@ const version = ["pro", "mid", "basic"];
 // FUNCTIONS
 async function getProducts() {
   try {
-    const response = await fetch("https://arq.highdatamx.com/api/v1/products");
+    const response = await fetch("https://diy.highdatamx.com/api/v1/products");
     const res = await response.json();
     if (!res) console.log("No products received");
     else {
