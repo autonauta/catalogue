@@ -57,101 +57,101 @@ const packages = {
       {
         sysId: "191682",
         quantity: 1,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189894",
         quantity: 1,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189881",
         quantity: 1,
-        service: 15
+        service: 15,
       },
       {
         sysId: "189858",
         quantity: 1,
-        service: 10
+        service: 10,
       },
       {
         sysId: "189857",
         quantity: 2,
-        service: 10
+        service: 10,
       },
     ],
     mid: [
       {
         sysId: "191682",
         quantity: 1,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189894",
         quantity: 1,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189881",
         quantity: 1,
-        service: 15
+        service: 15,
       },
       {
         sysId: "189858",
         quantity: 2,
-        service: 10
+        service: 10,
       },
       {
         sysId: "189857",
         quantity: 2,
-        service: 10
+        service: 10,
       },
       {
         sysId: "191817",
         quantity: 1,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189889",
         quantity: 1,
-        service: 0
+        service: 0,
       },
     ],
     pro: [
       {
         sysId: "191682",
         quantity: 1,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189894",
         quantity: 2,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189881",
         quantity: 2,
-        service: 15
+        service: 15,
       },
       {
         sysId: "189858",
         quantity: 3,
-        service: 10
+        service: 10,
       },
       {
         sysId: "189857",
         quantity: 5,
-        service: 10
+        service: 10,
       },
       {
         sysId: "191817",
         quantity: 1,
-        service: 30
+        service: 30,
       },
       {
         sysId: "189889",
         quantity: 2,
-        service: 0
+        service: 0,
       },
     ],
   },
@@ -160,66 +160,66 @@ const packages = {
       {
         sysId: "194832",
         quantity: 1,
-        service: 40
+        service: 40,
       },
       {
         sysId: "195032",
         quantity: 2,
-        service: 50
+        service: 50,
       },
       {
         sysId: "204207",
         quantity: 1,
-        service: 10
+        service: 10,
       },
       {
         sysId: "174448",
         quantity: 1,
-        service: 0
+        service: 0,
       },
     ],
     mid: [
       {
         sysId: "194832",
         quantity: 1,
-        service: 40
+        service: 40,
       },
       {
         sysId: "195032",
         quantity: 3,
-        service: 50
+        service: 50,
       },
       {
         sysId: "204207",
         quantity: 1,
-        service: 10
+        service: 10,
       },
       {
         sysId: "174448",
         quantity: 1,
-        service: 0
+        service: 0,
       },
     ],
     pro: [
       {
         sysId: "194832",
         quantity: 1,
-        service: 40
+        service: 40,
       },
       {
         sysId: "195032",
         quantity: 4,
-        service: 50
+        service: 50,
       },
       {
         sysId: "204207",
         quantity: 1,
-        service: 10
+        service: 10,
       },
       {
         sysId: "174448",
         quantity: 1,
-        service: 0
+        service: 0,
       },
     ],
   },
@@ -228,26 +228,26 @@ const packages = {
       {
         sysId: "167823",
         quantity: 1,
-        service: 50
+        service: 50,
       },
     ],
     mid: [
       {
         sysId: "159281",
         quantity: 1,
-        service: 75
+        service: 75,
       },
     ],
     pro: [
       {
         sysId: "167823",
         quantity: 1,
-        service: 50
+        service: 50,
       },
       {
         sysId: "159281",
         quantity: 1,
-        service: 75
+        service: 75,
       },
     ],
   },
@@ -256,42 +256,42 @@ const packages = {
       {
         sysId: "190988",
         quantity: 1,
-        service: 50
+        service: 50,
       },
       {
         sysId: "170761",
         quantity: 1,
-        service: 25
+        service: 25,
       },
     ],
     mid: [
       {
         sysId: "190988",
         quantity: 1,
-        service: 50
+        service: 50,
       },
       {
         sysId: "170761",
         quantity: 2,
-        service: 25
+        service: 25,
       },
     ],
     pro: [
       {
         sysId: "190988",
         quantity: 1,
-        service: 50
+        service: 50,
       },
       {
         sysId: "170761",
         quantity: 3,
-        service: 25
+        service: 25,
       },
     ],
   },
   tax: 1.16,
-  markup: .45,
-  markupClient: .15,
+  markup: 0.45,
+  markupClient: 0.15,
 };
 var packagePrices = {
   iluminacion: {
@@ -340,15 +340,19 @@ const conectividadPro = document.getElementById("conectividad-pro");
 const conectividadMid = document.getElementById("conectividad-mid");
 const conectividadBasic = document.getElementById("conectividad-basic");
 
-const category = ["iluminacion", "seguridad", "vigilancia", "videoportero", "conectividad"];
+const category = [
+  "iluminacion",
+  "seguridad",
+  "vigilancia",
+  "videoportero",
+  "conectividad",
+];
 const version = ["pro", "mid", "basic"];
 
 // FUNCTIONS
 async function getProducts() {
   try {
-    const response = await fetch(
-      "https://arq.highdatamx.com:3000/api/v1/products"
-    );
+    const response = await fetch("https://arq.highdatamx.com/api/v1/products");
     const res = await response.json();
     if (!res) console.log("No products received");
     else {
@@ -378,8 +382,8 @@ function createPricelist(products) {
 }
 
 async function calculatePackages(pl, pk) {
-  for(let i=0; i< category.length; i++){
-    for( let j = 0; j < version.length; j++){
+  for (let i = 0; i < category.length; i++) {
+    for (let j = 0; j < version.length; j++) {
       for (let k = 0; k < pk[category[i]][version[j]].length; k++) {
         //----------- ACTION ----------------------
         const cat = category[i];
@@ -387,10 +391,13 @@ async function calculatePackages(pl, pk) {
         const sysId = pk[cat][ver][k].sysId;
         const quantity = pk[cat][ver][k].quantity;
         //Price of packages including service fee and markup and markup of client
-        packagePrices[cat][ver] += pk.tax * quantity * ((pl[cat][sysId] * (1+pk.markup)) + pk[cat][ver][k].service);
+        packagePrices[cat][ver] +=
+          pk.tax *
+          quantity *
+          (pl[cat][sysId] * (1 + pk.markup) + pk[cat][ver][k].service);
         //Adds clients markup at the end of the array
-        if(k === pk[category[i]][version[j]].length - 1) {
-          packagePrices[cat][ver] *= (1 + pk.markupClient); 
+        if (k === pk[category[i]][version[j]].length - 1) {
+          packagePrices[cat][ver] *= 1 + pk.markupClient;
         }
         //--------- END ACTION
       }
@@ -399,7 +406,7 @@ async function calculatePackages(pl, pk) {
   return packagePrices;
 }
 
-async function populate(upk){
+async function populate(upk) {
   iluminacionPro.innerHTML = "$ " + upk.iluminacion.pro.toFixed() + " USD";
   iluminacionMid.innerHTML = "$ " + upk.iluminacion.mid.toFixed() + " USD";
   iluminacionBasic.innerHTML = "$ " + upk.iluminacion.basic.toFixed() + " USD";
@@ -411,10 +418,12 @@ async function populate(upk){
   vigilanciaBasic.innerHTML = "$ " + upk.vigilancia.basic.toFixed() + " USD";
   videoporteroPro.innerHTML = "$ " + upk.videoportero.pro.toFixed() + " USD";
   videoporteroMid.innerHTML = "$ " + upk.videoportero.mid.toFixed() + " USD";
-  videoporteroBasic.innerHTML = "$ " + upk.videoportero.basic.toFixed() + " USD";
+  videoporteroBasic.innerHTML =
+    "$ " + upk.videoportero.basic.toFixed() + " USD";
   conectividadPro.innerHTML = "$ " + upk.conectividad.pro.toFixed() + " USD";
   conectividadMid.innerHTML = "$ " + upk.conectividad.mid.toFixed() + " USD";
-  conectividadBasic.innerHTML = "$ " + upk.conectividad.basic.toFixed() + " USD";
+  conectividadBasic.innerHTML =
+    "$ " + upk.conectividad.basic.toFixed() + " USD";
   return 1;
 }
 // EN OF FUNCTIONS
@@ -426,9 +435,10 @@ async function main() {
   let priceList = createPricelist(products);
   //create the package prices with calculatePackages function
   let updatedPackages = await calculatePackages(priceList, packages);
-  console.log(JSON.stringify(updatedPackages,null,4));
+  console.log(JSON.stringify(updatedPackages, null, 4));
   const elements = await populate(updatedPackages);
-  if(elements === 1) console.log("Elements: " + JSON.stringify(elements,null,4));
+  if (elements === 1)
+    console.log("Elements: " + JSON.stringify(elements, null, 4));
 }
 //EXECUTING THE MAIN FUNCTION
 main();
